@@ -1,0 +1,28 @@
+{
+  "name": "bakircay-web-org-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "commands": "tsc && node ./dist/command.js",
+    "start": "node ./dist/command.js && node ./dist/index.js",
+    "dev": "nodemon ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "0.13.0",
+    "@discordjs/rest": "0.4.1",
+    "discord-api-types": "0.32.1",
+    "discord.js": "13.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.33",
+    "eslint": "8.15.0",
+    "nodemon": "2.0.16",
+    "ts-node": "10.7.0",
+    "typescript": "4.6.4"
+  }
+}

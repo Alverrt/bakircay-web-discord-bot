@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "commands": "tsc && node ./dist/command.js",
-    "start": "node ./dist/command.js && node ./dist/index.js",
+    "start": "tsc && node ./dist/command.js && node ./dist/index.js",
     "dev": "nodemon ./src/index.ts"
   },
   "keywords": [],

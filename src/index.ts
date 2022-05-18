@@ -3,7 +3,7 @@ import * as config from "./config.json"
 
 
 	// Create a new client instance
-const client: Client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILDS] });
+const client: Client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILDS],  retryLimit: 100 });
 
 let guild: Guild;
 let unregisteredUser: Role
